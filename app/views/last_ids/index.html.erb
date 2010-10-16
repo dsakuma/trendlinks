@@ -1,0 +1,20 @@
+<h1>Listing last_ids</h1>
+
+<table>
+  <tr>
+    <th>Last</th>
+  </tr>
+
+<% @last_ids.each do |last_id| %>
+  <tr>
+    <td><%=h last_id.last_id %></td>
+    <td><%= link_to 'Show', last_id %></td>
+    <td><%= link_to 'Edit', edit_last_id_path(last_id) %></td>
+    <td><%= link_to 'Destroy', last_id, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New last_id', new_last_id_path %>

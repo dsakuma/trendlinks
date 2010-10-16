@@ -1,0 +1,24 @@
+<h1>Editing shorter</h1>
+
+<% form_for(@shorter) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :short_url %><br />
+    <%= f.text_field :short_url %>
+  </p>
+  <p>
+    <%= f.label :current_id %><br />
+    <%= f.text_field :current_id %>
+  </p>
+  <p>
+    <%= f.label :count %><br />
+    <%= f.text_field :count %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @shorter %> |
+<%= link_to 'Back', shorters_path %>

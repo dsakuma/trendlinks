@@ -1,0 +1,24 @@
+<h1>Listing shorters</h1>
+
+<table>
+  <tr>
+    <th>Short url</th>
+    <th>Current</th>
+    <th>Count</th>
+  </tr>
+
+<% @shorters.each do |shorter| %>
+  <tr>
+    <td><%=h shorter.short_url %></td>
+    <td><%=h shorter.current_id %></td>
+    <td><%=h shorter.count %></td>
+    <td><%= link_to 'Show', shorter %></td>
+    <td><%= link_to 'Edit', edit_shorter_path(shorter) %></td>
+    <td><%= link_to 'Destroy', shorter, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New shorter', new_shorter_path %>

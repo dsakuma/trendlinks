@@ -1,0 +1,13 @@
+<p>
+  <b>Resolved url:</b>
+  <%=h @last_hour.resolved_url %>
+</p>
+
+<p>
+  <b>Count:</b>
+  <%=h @last_hour.count %>
+</p>
+
+
+<%= link_to 'Edit', edit_last_hour_path(@last_hour) %> |
+<%= link_to 'Back', last_hours_path %>

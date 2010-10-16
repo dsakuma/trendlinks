@@ -1,0 +1,15 @@
+<h1>New resolved</h1>
+
+<% form_for(@resolved) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :resolved_url %><br />
+    <%= f.text_field :resolved_url %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', resolveds_path %>

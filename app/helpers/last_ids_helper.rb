@@ -1,0 +1,2 @@
+module LastIdsHelper
+end

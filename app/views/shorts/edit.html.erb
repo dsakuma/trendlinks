@@ -1,0 +1,20 @@
+<h1>Editing short</h1>
+
+<% form_for(@short) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.label :resolved_id %><br />
+    <%= f.text_field :resolved_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @short %> |
+<%= link_to 'Back', shorts_path %>

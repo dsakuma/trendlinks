@@ -1,0 +1,16 @@
+<h1>Editing last_id</h1>
+
+<% form_for(@last_id) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :last_id %><br />
+    <%= f.text_field :last_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @last_id %> |
+<%= link_to 'Back', last_ids_path %>

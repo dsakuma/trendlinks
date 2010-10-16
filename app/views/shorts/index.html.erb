@@ -1,0 +1,22 @@
+<h1>Listing shorts</h1>
+
+<table>
+  <tr>
+    <th>Url</th>
+    <th>Resolved</th>
+  </tr>
+
+<% @shorts.each do |short| %>
+  <tr>
+    <td><%=h short.url %></td>
+    <td><%=h short.resolved_id %></td>
+    <td><%= link_to 'Show', short %></td>
+    <td><%= link_to 'Edit', edit_short_path(short) %></td>
+    <td><%= link_to 'Destroy', short, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New short', new_short_path %>

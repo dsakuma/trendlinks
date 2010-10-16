@@ -1,0 +1,16 @@
+<h1>Editing current</h1>
+
+<% form_for(@current) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :resolved_url %><br />
+    <%= f.text_field :resolved_url %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @current %> |
+<%= link_to 'Back', currents_path %>

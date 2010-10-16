@@ -1,0 +1,15 @@
+<h1>New last_id</h1>
+
+<% form_for(@last_id) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :last_id %><br />
+    <%= f.text_field :last_id %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', last_ids_path %>

@@ -1,0 +1,20 @@
+<h1>Editing last_hour</h1>
+
+<% form_for(@last_hour) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :resolved_url %><br />
+    <%= f.text_field :resolved_url %>
+  </p>
+  <p>
+    <%= f.label :count %><br />
+    <%= f.text_field :count %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @last_hour %> |
+<%= link_to 'Back', last_hours_path %>

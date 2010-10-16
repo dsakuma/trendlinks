@@ -1,0 +1,20 @@
+<h1>Listing resolveds</h1>
+
+<table>
+  <tr>
+    <th>Resolved url</th>
+  </tr>
+
+<% @resolveds.each do |resolved| %>
+  <tr>
+    <td><%=h resolved.resolved_url %></td>
+    <td><%= link_to 'Show', resolved %></td>
+    <td><%= link_to 'Edit', edit_resolved_path(resolved) %></td>
+    <td><%= link_to 'Destroy', resolved, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New resolved', new_resolved_path %>

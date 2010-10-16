@@ -1,0 +1,13 @@
+<p>
+  <b>Url:</b>
+  <%=h @short.url %>
+</p>
+
+<p>
+  <b>Resolved:</b>
+  <%=h @short.resolved_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_short_path(@short) %> |
+<%= link_to 'Back', shorts_path %>
