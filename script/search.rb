@@ -9,17 +9,31 @@ require File.dirname(__FILE__)+'/../config/environment'
 Rails.configuration.log_level = :info # Disable debug
 ActiveRecord::Base.allow_concurrency = true
 
+
 QUERY='+migre.me+OR+bit.ly'
 RPP=100
+
+
+def check_script
+    if (`ps -ef | grep "search.rb" | grep -v grep | grep -v bash | wc -l`.to_i > 1)
+      #jah estah em execucao
+      puts "jah estah em execucao"
+      return false
+    else
+      #o script pode ser executado
+      return true
+    end
+end
+
 def update_last_tweet_id(id)
   last_id = LastId.find :first
-
   if last_id.nil?
     last_id = LastId.new
+    last_id.last_id = id
+    last_id.save
+  else
+    last_id.update_attribute('last_id', id)
   end
-
-  last_id.last_id = id
-  last_id.save
 end
 
 #Retorna o Since Id
@@ -41,8 +55,10 @@ end
 
 #Retorna os tweets
 def get_tweets(query)
+  puts "nakamashi log"
   tweets = Array.new
   result = search_tweets build_params nil
+  puts "get_tweets antes do if"
   if !result.results.nil? && result.results.size > 0
     puts"Recebeu First ID: #{result.results.first.id}"
     update_last_tweet_id(result.results.first.id)
@@ -58,6 +74,7 @@ def get_tweets(query)
      break
     end
   end
+    puts "nakamashi log"
   tweets
 end
 
@@ -103,8 +120,14 @@ end
 
 #### O script comeca aqui
 begin
-  tweets = get_tweets(QUERY)
-  urls = get_urls(tweets)
-  save_urls urls
+  while(true)
+    #TODO: CRIAR LOG PARA CADA VEZ QUE O SCRIPT EH EXECUTADO
+    puts "[#{Time.now}] Executando search.rb"
+    if check_script
+      tweets = get_tweets(QUERY)
+      urls = get_urls(tweets)
+      save_urls urls
+   end
+  end
 end
 
