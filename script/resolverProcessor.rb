@@ -4,7 +4,7 @@ require 'rubygems'
 require 'net/http'
 require 'uri'
 
-ENV["RAILS_ENV"] ||= "development"
+ENV["RAILS_ENV"] ||= "development" 
 ENV["PATH"] = "/usr/local/bin/:/opt/local/bin:#{ENV["PATH"]}"
 require File.dirname(__FILE__)+'/../config/environment'
 Rails.configuration.log_level = :info # Disable debug
