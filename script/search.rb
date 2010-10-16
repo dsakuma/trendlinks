@@ -12,12 +12,24 @@ ActiveRecord::Base.allow_concurrency = true
 QUERY='+migre.me+OR+bit.ly'
 RPP=100
 def update_last_tweet_id(id)
-#TODO guardar o ultimo id do twitter. banco???
+  last_id = LastId.find :first
+
+  if last_id.nil?
+    last_id = LastId.new
+  end
+
+  last_id.last_id = id
+  last_id.save
 end
 
 #Retorna o Since Id
 def since_id
-  ""
+  last_id = LastId.find :first
+  if last_id.nil?
+    return ""
+  else
+    return last_id.last_id
+  end
 end
 
 #Faz o GET de acordo com os parâmetros passados no Twitter e retorna uma lista de resultados
@@ -42,8 +54,8 @@ def get_tweets(query)
     end
     if !result.next_page.nil?
       result=search_tweets build_params(result.next_page[1..-1])
-    else
-      return
+   else
+     break
     end
   end
   tweets
@@ -66,17 +78,33 @@ def build_params(next_page)
   hash_params
 end
 
-def save_tweet result
-
+#Recebe um array de msgs e retorna a url mencionada nela
+def get_urls(tweets)
+  urls = Array.new
+  url_regexp = /^http:\/\/\w/
+  for i in tweets
+    url = i.split.grep(url_regexp)[0]
+    if(!url.nil?)
+      url = url.gsub(/.*http/, 'http')
+      urls.push url
+    end
+  end
+  urls
 end
 
-#Recebe uma mensagem e retorna a url mencionada nela
-def get_url(msg)
-
+#Salva um array de urls na tabela Short
+def save_urls(urls)
+  for i in urls
+   s = Short.new
+   s.url = i
+   s.save
+  end
 end
+
 #### O script comeca aqui
 begin
   tweets = get_tweets(QUERY)
-
+  urls = get_urls(tweets)
+  save_urls urls
 end
 
