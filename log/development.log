@@ -70,3 +70,217 @@ Migrating to CreateLastIds (20101016021356)
   [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `shorts`[0m
   [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `shorts`[0m
   [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Columns (7.2ms)[0m   [0mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `shorts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mShort Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.2ms)[0m   [0mselect * from trendlinks.shorts limit 10[0m
+  [4;36;1mShort Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.2ms)[0m   [0mselect * from trendlinks.shorts limit 1000[0m
+  [4;36;1mShort Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.1ms)[0m   [0mselect * from trendlinks.shorts limit 10[0m
+  [4;36;1mShort Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.1ms)[0m   [0mselect * from trendlinks.shorts limit 10[0m
+  [4;36;1mShort Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.2ms)[0m   [0mselect * from trendlinks.shorts limit 1[0m
+  [4;36;1mShort Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.1ms)[0m   [0mselect * from trendlinks.shorts limit 1000[0m
+  [4;36;1mShort Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.1ms)[0m   [0mselect * from trendlinks.shorts limit 1[0m
+  [4;36;1mShort Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.3ms)[0m   [0mselect * from trendlinks.shorts limit 16[0m
+  [4;36;1mShort Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.1ms)[0m   [0mselect * from trendlinks.shorts limit 16[0m
+  [4;36;1mShort Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.1ms)[0m   [0mselect * from trendlinks.shorts limit 1000[0m
+  [4;36;1mShort Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.1ms)[0m   [0mselect * from trendlinks.shorts limit 1000[0m
+  [4;36;1mShort Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.1ms)[0m   [0mselect * from trendlinks.shorts limit 1000[0m
+  [4;36;1mShort Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.1ms)[0m   [0mselect * from trendlinks.shorts limit 1000[0m
+  [4;36;1mShort Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.1ms)[0m   [0mselect * from trendlinks.shorts limit 1000[0m
+  [4;36;1mShort Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+  [4;35;1mResolved Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `resolveds`[0m
+  [4;36;1mResolved Load (0.4ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://migreme.com/1Aw6X') LIMIT 1[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.8ms)[0m   [0mselect * from trendlinks.shorts limit 1000[0m
+  [4;36;1mShort Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+  [4;35;1mResolved Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `resolveds`[0m
+  [4;36;1mResolved Load (0.1ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://migreme.com/1Aw6X') LIMIT 1[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.1ms)[0m   [0mselect * from trendlinks.shorts limit 1000[0m
+  [4;36;1mShort Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+  [4;35;1mResolved Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `resolveds`[0m
+  [4;36;1mResolved Load (0.1ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://migreme.com/1Aw6X') LIMIT 1[0m
+  [4;35;1mSQL (136.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mResolved Create (4.1ms)[0m   [0;1mINSERT INTO `resolveds` (`resolved_url`, `created_at`, `updated_at`) VALUES('http://migreme.com/1Aw6X', '2010-10-16 07:18:00', '2010-10-16 07:18:00')[0m
+  [4;35;1mSQL (44.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mShort Update (42.8ms)[0m   [0mUPDATE `shorts` SET `updated_at` = '2010-10-16 07:18:00', `resolved_id` = 1 WHERE `id` = 1[0m
+  [4;36;1mSQL (52.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mResolved Load (1.1ms)[0m   [0mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mResolved Create (0.3ms)[0m   [0mINSERT INTO `resolveds` (`resolved_url`, `created_at`, `updated_at`) VALUES('http://www.youtube.com/watch?v=dhGy53Jh028', '2010-10-16 07:18:02', '2010-10-16 07:18:02')[0m
+  [4;36;1mSQL (52.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mShort Update (0.5ms)[0m   [0;1mUPDATE `shorts` SET `updated_at` = '2010-10-16 07:18:02', `resolved_id` = 2 WHERE `id` = 2[0m
+  [4;35;1mSQL (40.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mResolved Load (0.6ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mShort Update (0.5ms)[0m   [0;1mUPDATE `shorts` SET `updated_at` = '2010-10-16 07:18:03', `resolved_id` = 2 WHERE `id` = 3[0m
+  [4;35;1mSQL (40.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mResolved Load (0.2ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mShort Update (4.0ms)[0m   [0;1mUPDATE `shorts` SET `updated_at` = '2010-10-16 07:18:05', `resolved_id` = 2 WHERE `id` = 4[0m
+  [4;35;1mSQL (40.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mResolved Load (0.4ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mShort Update (0.5ms)[0m   [0;1mUPDATE `shorts` SET `updated_at` = '2010-10-16 07:18:06', `resolved_id` = 2 WHERE `id` = 5[0m
+  [4;35;1mSQL (40.2ms)[0m   [0mCOMMIT[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.3ms)[0m   [0mselect * from trendlinks.shorts limit 1000[0m
+  [4;36;1mShort Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+  [4;35;1mResolved Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `resolveds`[0m
+  [4;36;1mResolved Load (0.5ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://migreme.com/1Aw6X') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mResolved Create (0.2ms)[0m   [0;1mINSERT INTO `resolveds` (`resolved_url`, `created_at`, `updated_at`) VALUES('http://migreme.com/1Aw6X', '2010-10-16 07:22:38', '2010-10-16 07:22:38')[0m
+  [4;35;1mSQL (74.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mShort Update (0.5ms)[0m   [0mUPDATE `shorts` SET `updated_at` = '2010-10-16 07:22:38', `resolved_id` = 3 WHERE `id` = 1[0m
+  [4;36;1mSQL (39.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mResolved Load (1.2ms)[0m   [0mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mResolved Create (0.5ms)[0m   [0mINSERT INTO `resolveds` (`resolved_url`, `created_at`, `updated_at`) VALUES('http://www.youtube.com/watch?v=dhGy53Jh028', '2010-10-16 07:22:40', '2010-10-16 07:22:40')[0m
+  [4;36;1mSQL (56.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mShort Update (0.6ms)[0m   [0;1mUPDATE `shorts` SET `updated_at` = '2010-10-16 07:22:40', `resolved_id` = 4 WHERE `id` = 2[0m
+  [4;35;1mSQL (29.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mResolved Load (0.6ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mShort Update (2.0ms)[0m   [0;1mUPDATE `shorts` SET `updated_at` = '2010-10-16 07:22:41', `resolved_id` = 4 WHERE `id` = 3[0m
+  [4;35;1mSQL (56.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mResolved Load (0.2ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mShort Update (0.5ms)[0m   [0;1mUPDATE `shorts` SET `updated_at` = '2010-10-16 07:22:44', `resolved_id` = 4 WHERE `id` = 4[0m
+  [4;35;1mSQL (85.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mResolved Load (3.4ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mShort Update (2.8ms)[0m   [0;1mUPDATE `shorts` SET `updated_at` = '2010-10-16 07:22:45', `resolved_id` = 4 WHERE `id` = 5[0m
+  [4;35;1mSQL (41.2ms)[0m   [0mCOMMIT[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.2ms)[0m   [0mselect * from trendlinks.shorts limit 1000[0m
+  [4;36;1mShort Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+  [4;35;1mResolved Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `resolveds`[0m
+  [4;36;1mResolved Load (0.3ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://migreme.com/1Aw6X') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mResolved Create (0.1ms)[0m   [0;1mINSERT INTO `resolveds` (`resolved_url`, `created_at`, `updated_at`) VALUES('http://migreme.com/1Aw6X', '2010-10-16 07:24:46', '2010-10-16 07:24:46')[0m
+  [4;35;1mSQL (53.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mShort Update (0.5ms)[0m   [0mUPDATE `shorts` SET `updated_at` = '2010-10-16 07:24:46', `resolved_id` = 5 WHERE `id` = 1[0m
+  [4;36;1mSQL (38.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mResolved Load (0.5ms)[0m   [0mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mResolved Create (0.2ms)[0m   [0mINSERT INTO `resolveds` (`resolved_url`, `created_at`, `updated_at`) VALUES('http://www.youtube.com/watch?v=dhGy53Jh028', '2010-10-16 07:24:48', '2010-10-16 07:24:48')[0m
+  [4;36;1mSQL (57.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mShort Update (0.7ms)[0m   [0;1mUPDATE `shorts` SET `updated_at` = '2010-10-16 07:24:48', `resolved_id` = 6 WHERE `id` = 2[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mResolved Load (0.6ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mShort Update (0.4ms)[0m   [0;1mUPDATE `shorts` SET `updated_at` = '2010-10-16 07:24:49', `resolved_id` = 6 WHERE `id` = 3[0m
+  [4;35;1mSQL (58.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mResolved Load (0.2ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mShort Update (0.7ms)[0m   [0;1mUPDATE `shorts` SET `updated_at` = '2010-10-16 07:24:50', `resolved_id` = 6 WHERE `id` = 4[0m
+  [4;35;1mSQL (48.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mResolved Load (0.2ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mShort Update (0.6ms)[0m   [0;1mUPDATE `shorts` SET `updated_at` = '2010-10-16 07:24:52', `resolved_id` = 6 WHERE `id` = 5[0m
+  [4;35;1mSQL (54.5ms)[0m   [0mCOMMIT[0m
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+DEPRECATION WARNING: ActiveRecord::Base.allow_concurrency= has been deprecated and no longer has any effect. Please remove all references to allow_concurrency=. (called from allow_concurrency= at /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:98)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mShort Load (0.3ms)[0m   [0mselect * from trendlinks.shorts limit 1000[0m
+  [4;36;1mShort Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `shorts`[0m
+  [4;35;1mResolved Columns (5.7ms)[0m   [0mSHOW FIELDS FROM `resolveds`[0m
+  [4;36;1mResolved Load (0.4ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://migreme.com/1Aw6X') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mResolved Load (0.2ms)[0m   [0mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mResolved Load (3.2ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mResolved Load (0.2ms)[0m   [0mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mResolved Load (0.1ms)[0m   [0;1mSELECT * FROM `resolveds` WHERE (`resolveds`.`resolved_url` = 'http://www.youtube.com/watch?v=dhGy53Jh028') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
