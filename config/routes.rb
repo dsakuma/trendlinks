@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.root :controller => 'trend'
+
   map.resources :last_ids
 
   map.resources :last_hours

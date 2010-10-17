@@ -99,6 +99,12 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
 			padding:3px 15px;
 		}
 		
+		#ver-zebra tr {
+			cursor: pointer
+		}
+		
+		
+		
 		.td_url{
 
 		}
@@ -257,9 +263,23 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
 		#ver-zebra-six td{
 			color:#495c4e;
 		}
+		
+		#ver-zebra-six tr {
+			cursor: pointer;
+		}
+
+		#rr_link, #r_link, #tc_link{
+		cursor: pointer;
+		}
 	  
-	  
-	  
+	  #trend_links_msg{
+	  display:block;
+	position:relative;
+	text-align:center;
+	top:100px;
+	width:100%;
+	font-family:'Josefin Sans Std Light',"Lucida Sans Unicode","Lucida Grande","Sans-Serif";
+	  }
 	  
 	</style>
 </head>
@@ -275,8 +295,7 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
 <a class="button b_last_hours" href="#" style="top: 236px; left: 199.5px;">Top Last Hour</a>
 </span>
 
-
-
+         
 <div id='last_hours_div'>
 
 <table id="ver-zebra">
@@ -292,70 +311,21 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
                  <th scope="col" id="vzebra-position">Position</th>  
 				<th scope="col" id="vzebra-url">URL</th>
              </tr>  
-         </thead>  
+         </thead>           
    
-  
-         
-   
-     <!-- Table body -->  
-   
+     <!-- Table body -->     
          <tbody>  
-             <tr>  
-                 <td class='td_position'>1</td>  
-                 <td class='td_url'>www.samwell.com</td>
-             </tr>  
-             <tr>  
-                 <td class='td_position'>2</td>  
-                 <td class='td_url'>http://www.youtube.com/sakuma-cocando-bunda/</td>
-             </tr>  
-             <tr>  
-                 <td class='td_position'>3</td>  
-                 <td class='td_url'>www.orkut.com/samwell-what-what</td>
-             </tr>  
-             <tr>  
-                 <td class='td_position'>4</td>  
-                 <td class='td_url'>www.google.com.br</td>
-             </tr>  
-             <tr>  
-                 <td class='td_position'>5</td>  
-                 <td class='td_url'>www.sakuma.baitola.com</td>
-             </tr>  
-             <tr>  
-                 <td class='td_position'>6</td>  
-                 <td class='td_url'>www.voicetechnology.com</td>
-             </tr>  
-             <tr>  
-                 <td class='td_position'>7</td>  
-                 <td class='td_url'>www.youtube.com/samwell</td>
-             </tr>  
-             <tr>  
-                 <td class='td_position'>8</td>  
-                 <td class='td_url'>www.viladiva.com</td>
-             </tr>  
-             <tr>  
-                 <td class='td_position'>9</td>  
-                 <td class='td_url'>www.azulejo.com</td>
-             </tr>  
-             <tr>  
-                 <td class='td_position'>10</td>  
-                 <td class='td_url'>www.google.com</td>
-             </tr>  
-             
-
-         </tbody>  
-   
+         	<% position = 1 %>
+			<% @last_hour_tops.each do |elem| %>
+			<tr onclick='window.open("<%= elem %>")' target='_blank'>				
+				<td class='td_position'><%= position %></td>  
+				<td class='td_url'><%= elem %></td>  
+			</tr>  		
+			<% position = position + 1 %>
+			<% end %>
+         </tbody>     
  </table>  
 </div>
-
-
-
-
-
-
-
-
-
-
 
 
 <span id='last_six_ours_tab'>
@@ -448,10 +418,11 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
 </div>
 <div id='footer'>
 <div id='links'>
-	<span id='rr_link'><img src='images/railsrumble.png'></span>
-	<span id='r_link'><img src='images/twitter.png'></span>
+	<span id='rr_link' onclick='window.open("http://railsrumble.com/")'><img src='images/railsrumble.png'></span>
+	<span id='r_link'  onclick='window.open("http://twitter.com")'><img src='images/twitter.png'></span>
 	<span id='tc_link'><img src='images/twitcam.gif'></span>
 </div>
+	<span id='trend_links_msg'>TrendLinks 2010 - Created On Rails Rumble<br>Powered by Azulejo</span>
 </div>
 </body>
 </html>
