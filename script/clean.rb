@@ -14,9 +14,14 @@ ActiveRecord::Base.allow_concurrency = true
 def copy_to_current_shorter_last_hours
   resolveds = Resolved.find(:all)
   for i in resolveds
-    current = Current.new
-    current.resolved_url = i.resolved_url
-    current.save
+    current_array = Current.find(:all, :conditions => "resolved_url = '#{i.resolved_url}'")
+    if current_array.empty?
+      current = Current.new
+      current.resolved_url = i.resolved_url
+      current.save
+   else
+      current = current_array[0]
+    end
     shorts = Short.find(:all, :conditions => "resolved_id = #{i.id}")
     copy_to_shorter(shorts.length, current)
     copy_to_lasthours current
