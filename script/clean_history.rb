@@ -13,7 +13,7 @@ ActiveRecord::Base.allow_concurrency = true
 require 'log4r'
 include Log4r
 
-@log = Logger.new('../log/clean_history.log',1,10485760)
+@log = Logger.new('/var/www/rr10-team-233/log/clean_history.log',1,10485760)
 
 horas = 6
 horas_convertidas = horas * 3600

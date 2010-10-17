@@ -12,7 +12,7 @@ ActiveRecord::Base.allow_concurrency = true
 require 'log4r'
 include Log4r
 
-@log = Logger.new('../log/search.log',1,10485760)
+#@log = Logger.new('/var/www/rr10-team-233/log/search.log',1,10485760)
 
 
 QUERY='+migre.me+OR+bit.ly+OR+goo.gl+OR+tinyurl.com+OR+is.gd'
@@ -31,28 +31,28 @@ def check_script
 end
 
 def update_last_tweet_id(id)
-  @log.info("[#{Time.now}] Update last tweet id")
+  #@log.info("[#{Time.now}] Update last tweet id")
   last_id = LastId.find :first
   if last_id.nil?
-    @log.info("[#{Time.now}] Inserindo novo since_id: [#{id}]")
+    #@log.info("[#{Time.now}] Inserindo novo since_id: [#{id}]")
     last_id = LastId.new
     last_id.last_id = id
     last_id.save
   else
-    @log.info("[#{Time.now}] Atualizando since)id para: [#{id}]")
+    #@log.info("[#{Time.now}] Atualizando since)id para: [#{id}]")
     last_id.update_attribute('last_id', id)
   end
 end
 
 #Retorna o Since Id
 def since_id
-  @log.info("[#{Time.now}] Retornando since_id")
+  #@log.info("[#{Time.now}] Retornando since_id")
   last_id = LastId.find :first
   if last_id.nil?
-    #@log.info("[#{Time.now}] Retornando since id: []")
+    ##@log.info("[#{Time.now}] Retornando since id: []")
     return ""
   else
-    #@log.info("[#{Time.now}] Retornando since id: [#{last_id.last_id}]")
+    ##@log.info("[#{Time.now}] Retornando since id: [#{last_id.last_id}]")
     return last_id.last_id
   end
 end
@@ -66,7 +66,7 @@ end
 
 #Retorna os tweets
 def get_tweets(query)
-  @log.info("[#{Time.now}] Buscando novos tweets")
+  #@log.info("[#{Time.now}] Buscando novos tweets")
   tweets = Array.new
   result = search_tweets build_params nil
 
@@ -92,7 +92,7 @@ end
 
 #retorna um hash com os parâmetros da request
 def build_params(next_page)
-  @log.info("[#{Time.now}] Construindo parametros para o search")
+  #@log.info("[#{Time.now}] Construindo parametros para o search")
   hash_params = {}
 
   if(next_page.nil?)
@@ -104,7 +104,7 @@ def build_params(next_page)
       hash_params[op[0]]=op[1]
     end
   end
-  @log.info("[#{Time.now}] Parametros: [query=>#{QUERY}, rrp=>#{RPP}, since_id=>#{hash_params[:since_id]}]")
+  #@log.info("[#{Time.now}] Parametros: [query=>#{QUERY}, rrp=>#{RPP}, since_id=>#{hash_params[:since_id]}]")
   hash_params[:q]=QUERY
   hash_params[:rpp]=RPP
   hash_params
@@ -112,7 +112,7 @@ end
 
 #Recebe um array de msgs e retorna a url mencionada nela
 def get_urls(tweets)
-  @log.info("[#{Time.now}] Separando apenas as urls")
+  #@log.info("[#{Time.now}] Separando apenas as urls")
   urls = Array.new
   url_regexp = /^http:\/\/\w/
   for i in tweets
@@ -127,9 +127,9 @@ end
 
 #Salva um array de urls na tabela Short
 def save_urls(urls)
-  @log.info("[#{Time.now}] Salvando urls no banco")
+  #@log.info("[#{Time.now}] Salvando urls no banco")
   for i in urls
-   @log.info("[#{Time.now}] Salvando url: [#{i}]")
+   #@log.info("[#{Time.now}] Salvando url: [#{i}]")
    s = Short.new
    s.url = i
    s.save
@@ -138,17 +138,17 @@ end
 
 #### O script comeca aqui
 begin
-  @log.info("[#{Time.now}] |||||||||||||||||||||||||||||||||||||||||||||")
-  @log.info("[#{Time.now}] Inicio da execucao")
+  #@log.info("[#{Time.now}] |||||||||||||||||||||||||||||||||||||||||||||")
+  #@log.info("[#{Time.now}] Inicio da execucao")
   if check_script
     while(true)
       tweets = get_tweets(QUERY)
       urls = get_urls(tweets)
       save_urls urls
     end
-    @log.info("[#{Time.now}] Fim da execucao")
+    #@log.info("[#{Time.now}] Fim da execucao")
   else
-    @log.info("[#{Time.now}] Script já está sendo executado")
+    #@log.info("[#{Time.now}] Script já está sendo executado")
   end
 end
 
