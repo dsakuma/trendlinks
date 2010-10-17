@@ -1,0 +1,369 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Reenie+Beanie">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light">
+	<style type="text/css">
+
+		body{
+background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
+	background: -webkit-gradient(linear, left bottom, right bottom, color-stop(0, #fbac3c),color-stop(0.87, #ffcc85));
+
+		}
+		#logo{
+			height: 200px;
+			width: 100%;
+			background-image: url('images/logo.png');
+			background-repeat: no-repeat;
+			display: block;
+			cursor: pointer;
+		}
+		#header{
+			height: 200px;
+			width: 100%;
+			background: #4d4d4b;
+			margin-left:auto;
+			margin-right:auto;
+			border-radius: 25px;
+			-moz-border-radius: 25px;
+			-moz-box-shadow: 6px 6px 14px #000;
+		    -webkit-box-shadow: 6px 6px 14px #000;
+		}
+		#footer{
+			background: #4d4d4b;
+			height: 200px;
+			width: 100%;
+			-moz-box-shadow: 6px 6px 14px #000;
+		    -webkit-box-shadow: 6px 6px 14px #000;
+		}
+
+		#links span{
+			padding: 10px;
+
+		}
+		#links{
+			margin-left:auto;
+			margin-right:auto;
+			position:relative;
+			top:20px;
+			width:500px;
+		}
+		#rr_link
+		{
+		position:relative;
+		top: 10px;
+		}
+		#page_body{
+				margin-left:auto;
+			margin-right:auto;
+			width:970px;
+			border-radius: 15px;
+			-moz-border-radius: 15px;
+		}
+		#ver-zebra{
+			border-collapse:collapse;
+			font-family:'Josefin Sans Std Light', "Lucida Sans Unicode","Lucida Grande","Sans-Serif";
+			font-size:22px;
+			margin:0 20px 20px;
+			text-align:left;
+			width:800px;
+			padding: 5px 5px 5px 15px;
+			-moz-box-shadow: 6px 6px 14px #000;
+		    -webkit-box-shadow: 6px 6px 14px #000;
+    		box-shadow: 6px 6px 14px #000;
+		}
+		.vzebra-odd{background:none repeat scroll 0 0 #EFF2FF;}
+		.vzebra-even{background:none repeat scroll 0 0 #E8EDFF;}
+
+		#ver-zebra #vzebra-url, #ver-zebra #vzebra-url2
+		{
+			background: #d0dafd;
+			border-bottom: 1px solid #c8d4fd;
+		}
+		#ver-zebra #vzebra-position, #ver-zebra #vzebra-count
+		{
+			background: #dce4ff;
+			border-bottom: 1px solid #d6dfff;
+		}
+		#ver-zebra th {
+			border-left:1px solid #FFFFFF;
+			border-right:1px solid #FFFFFF;
+			color:#003399;
+			font-size:28px;
+			font-weight:normal;
+			padding:12px 15px;
+			font-family:'Reenie Beanie';
+		}
+		#ver-zebra td {
+			border-left:1px solid #FFFFFF;
+			border-right:1px solid #FFFFFF;
+			padding:3px 15px;
+		}
+
+		#ver-zebra tr {
+			cursor: pointer
+		}
+
+
+
+		.td_url{
+
+		}
+		.td_position{
+			width:10px;
+		}
+		#last_hours_div{
+
+		}
+		#tl_explanation{
+			color:white;
+			float:left;
+			font-size:28px;
+			left:200px;
+			position:absolute;
+			top:90px;
+			font-family:'Lobster', "Lucida Sans Unicode","Lucida Grande","Sans-Serif";
+		}
+		#whw{
+		color: red;
+		}
+		#samwell{
+		display:block;
+		height:100px;
+		position:absolute;
+		right:5px;
+		top:5px;
+		width:100px;
+		}
+		#ver-zebra tr:hover td{
+			background: #3399FF;
+			color:white;
+		}
+		#ver-zebra td{
+			color:#666699;
+		}
+		.b_last_hours {
+		   border-top: 1px solid #96d1f8;
+		   background: #65a9d7;
+		   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+		   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+		   padding: 5px 10px;
+		   -webkit-border-radius: 8px;
+		   -moz-border-radius: 8px;
+		   border-radius: 8px;
+		   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+		   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+		   box-shadow: rgba(0,0,0,1) 0 1px 0;
+		   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+		   color: white;
+		   font-size: 24px;
+		   font-family: Georgia, serif;
+		   text-decoration: none;
+		   vertical-align: middle;
+		   font-family:'Lobster', "Lucida Sans Unicode","Lucida Grande","Sans-Serif";
+   }
+	.b_last_hours:hover {
+	   border-top-color: #28597a;
+	   background: #28597a;
+	   color: #ccc;
+	   }
+	.b_last_hours:active {
+	   border-top-color: #1b435e;
+	   background: #1b435e;
+	   }
+	  .b_last_six_hours{
+
+	  }
+
+	  .b_last_six_hours {
+		   border-top: 1px solid #99cc99;
+		   background: #006600;
+		   background: -webkit-gradient(linear, left top, left bottom, from(#006600), to(#99cc99));
+		   background: -moz-linear-gradient(top, #006600, #99cc99);
+		   padding: 5px 10px;
+		   -webkit-border-radius: 8px;
+		   -moz-border-radius: 8px;
+		   border-radius: 8px;
+		   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+		   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+		   box-shadow: rgba(0,0,0,1) 0 1px 0;
+		   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+		   color: white;
+		   font-size: 24px;
+		   font-family: Georgia, serif;
+		   text-decoration: none;
+		   vertical-align: middle;
+		   font-family:'Lobster', "Lucida Sans Unicode","Lucida Grande","Sans-Serif";
+   }
+	.b_last_six_hours:hover {
+	   border-top-color: #006600;
+	   background: #006600;
+	   color: #ccc;
+	   }
+	.b_last_six_hours:active {
+	   border-top-color: #1b435e;
+	   background: #1b435e;
+	   }
+	  .b_last_six_hours{
+
+	  }
+
+
+
+
+
+
+
+
+	  #ver-zebra-six{
+			border-collapse:collapse;
+			font-family:'Josefin Sans Std Light', "Lucida Sans Unicode","Lucida Grande","Sans-Serif";
+			font-size:22px;
+			margin:0 20px 20px;
+			text-align:left;
+			width:800px;
+			padding: 5px 5px 5px 15px;
+			-moz-box-shadow: 6px 6px 14px #000;
+		    -webkit-box-shadow: 6px 6px 14px #000;
+    		box-shadow: 6px 6px 14px #000;
+		}
+		.vzebra-odd-six{background:none repeat scroll 0 0 #a6cbb1;}
+		.vzebra-even-six{background:none repeat scroll 0 0 #8cac95;}
+
+		#ver-zebra-six #vzebra-url-six, #ver-zebra-six #vzebra-url2-six
+		{
+			background: #497254;
+			border-bottom: 1px solid #c8d4fd;
+		}
+		#ver-zebra-six #vzebra-position-six, #ver-zebra-six #vzebra-count-six
+		{
+			background: #598e68;
+			border-bottom: 1px solid #d6dfff;
+		}
+		#ver-zebra-six th {
+			border-left:1px solid #FFFFFF;
+			border-right:1px solid #FFFFFF;
+			color:#014615;
+			font-size:28px;
+			font-weight:normal;
+			padding:12px 15px;
+			font-family:'Reenie Beanie';
+		}
+		#ver-zebra-six td {
+			border-left:1px solid #FFFFFF;
+			border-right:1px solid #FFFFFF;
+			padding:3px 15px;
+		}
+
+	  	#ver-zebra-six tr:hover td{
+			background: #448857;
+			color:white;
+		}
+		#ver-zebra-six td{
+			color:#495c4e;
+		}
+
+		#ver-zebra-six tr {
+			cursor: pointer;
+		}
+
+		#rr_link, #r_link, #tc_link{
+		cursor: pointer;
+		}
+
+	  #trend_links_msg{
+	  display:block;
+	position:relative;
+	text-align:center;
+	top:100px;
+	width:100%;
+	font-family:'Josefin Sans Std Light',"Lucida Sans Unicode","Lucida Grande","Sans-Serif";
+	  }
+
+	  #about_us{
+	  	font-family:'Josefin Sans Std Light',"Lucida Sans Unicode","Lucida Grande","Sans-Serif";
+	  		width:100%;
+	  		font-size: 22;
+	  		font-weight: bold;
+	  		color: white;
+	  			  display:block;
+	position:relative;
+	text-align:center;
+	top:10px;
+	cursor: pointer;
+	  }
+
+	  .members, .trend_links, .oproducts{
+	    font-family:'Josefin Sans Std Light',"Lucida Sans Unicode","Lucida Grande","Sans-Serif";
+	    font-size: 22;
+	  		font-weight: bold;
+	  		padding: 20px;
+	  		height: 100px;
+	  }
+
+.oproducts a{
+  float: left;
+  padding: 10px;
+}
+
+  .autitle{
+    font-size: 26;
+    color: white;
+  }
+  #basix{
+    background-image: url('/images/basix_logo.gif');
+    width:70px;
+    height:20px;
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  #voxscale{
+    background-image: url('/images/voxscale.jpg');
+    width:100px;
+    height:50px;
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+	</style>
+</head>
+<body>
+
+<div id='header'>
+	<span id='logo' onclick='window.location.href="/"'></span>
+	<div id='tl_explanation'>See <label id='whw'>what's happening in the world</label> by the most posted links in Twitter  <br/>-- Right now!!</div>
+	<span id='samwell'></span>
+</div>
+<div id='page_body'>
+
+<div class='trend_links'>
+  <label class='autitle'>About TrendLinks</label><br>
+  TrendLinks was created to provide the most 'talked' links on the Twitter
+</div>
+
+<div class='members'>
+  <label class='autitle'>About Developers</label><br>
+  Created by: <a href='http://twitter.com/dsakuma'>Daniel Sakuma</a>, <a href='http://twitter.com/mcapablanca'>Rodrigo Ribeiro</a>, <a href='http://twitter.com/jeryesf'>Jeryes Farah</a> and <a href='http://twitter.com/nakamashi'>Diego Nakamashi</a><br>
+</div>
+<div class='oproducts'>
+  <label class='autitle'>Other Products that Team Azulejo are contributing on</label><br>
+  <a href='http://www.basix.com.br'><span id='basix'></span></a>
+  <a href='http://www.voicetechnology.com.br/produtos_voxscale.asp'><span id='voxscale'></span></a>
+
+</div>
+
+
+</div>
+<div id='footer'>
+<span id='about_us' onclick="window.location.href='about_us'">about us</span>
+<div id='links'>
+	<span id='rr_link' onclick='window.open("http://railsrumble.com/")'><img src='images/railsrumble.png'></span>
+	<span id='r_link'  onclick='window.open("http://twitter.com")'><img src='images/twitter.png'></span>
+	<span id='tc_link'><img src='images/twitcam.gif'></span>
+</div>
+	<span id='trend_links_msg'>TrendLinks - Created On Rails Rumble 2010<br>Powered by Azulejo</span>
+</div>
+</body>
+</html>
+
