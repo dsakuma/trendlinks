@@ -17,10 +17,10 @@ DEFAULT_SHORTS_LIMIT = 1000;
 require 'log4r'
 include Log4r
 
-@log = Logger.new('../log/resolver.log',1,10485760)
+#@log = Logger.new('/var/www/rr10-team-233/log/resolver.log',1,10485760)
 
 def processShortList()
-  @log.info("[#{Time.now}] Process Short List...")
+  #@log.info("[#{Time.now}] Process Short List...")
 
   list = getShortList(nil);
   list.each { |s|
@@ -28,21 +28,21 @@ def processShortList()
     resolved = getResolvedURL(s_url);
     s.resolved_id = resolved.id
     s.save
-  @log.info("[#{Time.now}] ShortList processed")
+  #@log.info("[#{Time.now}] ShortList processed")
   }
 end
 
 def getShortList(limit)
   limit = DEFAULT_SHORTS_LIMIT if(limit == nil or limit == 0)
-   @log.info("[#{Time.now}] Getting Short List by limit: #{limit.to_s}")
+   #@log.info("[#{Time.now}] Getting Short List by limit: #{limit.to_s}")
   return Short.getLimitedUnprocessedList(limit)
 end
 
 def getResolvedURL(s_url)
-  @log.info("[#{Time.now}] Getting Resolved URL...")
-  @log.info("[#{Time.now}] Shorted URL: #{s_url}")
+  #@log.info("[#{Time.now}] Getting Resolved URL...")
+  #@log.info("[#{Time.now}] Shorted URL: #{s_url}")
   r_url = fetch(s_url);
-  @log.info("[#{Time.now}] Resolved URL: #{r_url}")
+  #@log.info("[#{Time.now}] Resolved URL: #{r_url}")
   resolved = Resolved.find_by_resolved_url r_url;
   if(resolved == nil)
     resolved = Resolved.new
@@ -53,7 +53,7 @@ def getResolvedURL(s_url)
 end
 
 def fetch(uri_str, limit = 10)
-    @log.info("[#{Time.now}] Fecht...")
+    #@log.info("[#{Time.now}] Fecht...")
       begin
         response = Net::HTTP.get_response(URI.parse(uri_str))
         case response

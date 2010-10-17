@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101017041322) do
+ActiveRecord::Schema.define(:version => 20101017072315) do
 
   create_table "currents", :force => true do |t|
     t.string   "resolved_url"
@@ -28,6 +28,12 @@ ActiveRecord::Schema.define(:version => 20101017041322) do
     t.integer  "last_id",    :limit => 8
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "last_six_top", :id => false, :force => true do |t|
+    t.integer "id",                                                 :default => 0, :null => false
+    t.string  "url"
+    t.integer "count", :limit => 32, :precision => 32, :scale => 0
   end
 
   create_table "resolveds", :force => true do |t|
