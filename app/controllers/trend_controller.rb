@@ -5,5 +5,9 @@ def index
 	@last_6_hour_tops = LastSixTop.find(:all,:conditions => 'url <> -1', :order => 'count DESC', :limit => 10)
 end
 
+def about_us
+
+end
+
 end
 

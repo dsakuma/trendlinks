@@ -16,6 +16,7 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
 			background-image: url('images/logo.png');
 			background-repeat: no-repeat;
 			display: block;
+			cursor: pointer;
 		}
 		#header{
 			height: 200px;
@@ -279,12 +280,25 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
 	font-family:'Josefin Sans Std Light',"Lucida Sans Unicode","Lucida Grande","Sans-Serif";
 	  }
 
+	  #about_us{
+	  	font-family:'Josefin Sans Std Light',"Lucida Sans Unicode","Lucida Grande","Sans-Serif";
+	  		width:100%;
+	  		font-size: 22;
+	  		font-weight: bold;
+	  		color: white;
+	  			  display:block;
+	position:relative;
+	text-align:center;
+	top:10px;
+	cursor: pointer;
+	  }
+
 	</style>
 </head>
 <body>
 
 <div id='header'>
-	<span id='logo'></span>
+	<span id='logo' onclick='window.location.href="/"'></span>
 	<div id='tl_explanation'>See <label id='whw'>what's happening in the world</label> by the most posted links in Twitter  <br/>-- Right now!!</div>
 	<span id='samwell'></span>
 </div>
@@ -386,6 +400,7 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
 
 </div>
 <div id='footer'>
+<span id='about_us' onclick="window.location.href='about_us'">about us</span>
 <div id='links'>
 	<span id='rr_link' onclick='window.open("http://railsrumble.com/")'><img src='images/railsrumble.png'></span>
 	<span id='r_link'  onclick='window.open("http://twitter.com")'><img src='images/twitter.png'></span>
