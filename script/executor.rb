@@ -1,12 +1,19 @@
 require 'script/resolverProcessor.rb'
 require 'app/jobs/thread_pool'
 
+ENV["RAILS_ENV"] ||= "development"
+ENV["PATH"] = "/usr/local/bin/:/opt/local/bin:#{ENV["PATH"]}"
+require File.dirname(__FILE__)+'/../config/environment'
+Rails.configuration.log_level = :info # Disable debug
+ActiveRecord::Base.allow_concurrency = true
 
 THREAD_POOL_SIZE = 20
 SHORTS_LIMIT_DEFAULT = 20
 
 def threadCreator(pool, last_index)
   begin
+
+  shortList = Array.new
   shortList = Short.getLimitedUnprocessedList(last_index, SHORTS_LIMIT_DEFAULT)
   if(shortList[-1].id != nil)
     tmp = shortList[-1].id;
@@ -21,6 +28,7 @@ def threadCreator(pool, last_index)
     return last_index
   end
   return tmp;
+
 end
 
 begin
