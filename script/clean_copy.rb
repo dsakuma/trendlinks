@@ -11,6 +11,9 @@ ActiveRecord::Base.allow_concurrency = true
 
 ##################
 
+@log = Logger.new('/var/www/rr10-team-233/log/clean_copy.log',1,10485760)
+
+
 def copy_to_current_shorter_last_hours
   resolveds = Resolved.find(:all)
   for i in resolveds
@@ -61,14 +64,14 @@ begin
   old_currents = Current.find :all, :select => "id"
   old_shortes = Shorter.find :first, :select => "id"
 
-  puts"Copy to current shorter and last hours"
+  @log.info("[#{Time.now}] Copiando para current shorter and last hours")
   copy_to_current_shorter_last_hours
 
-  puts"Deletando current/shorter Antigas"
+  @log.info("[#{Time.now}] Deletando current/shorter Antigas")
   Current.delete old_currents
   Shorter.delete old_shortes
 
-  puts"Deletando Short/Resolved"
+  @log.info("[#{Time.now}] Deletando short/resolved")
   Short.delete_all
   Resolved.delete_all
 end
