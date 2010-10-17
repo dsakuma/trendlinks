@@ -60,6 +60,7 @@ end
 
 
 begin
+  @log.info("[#{Time.now}] |||||||||||||||||||||||||||||||||||||")
 
   old_currents = Current.find :all, :select => "id"
   old_shortes = Shorter.find :first, :select => "id"
