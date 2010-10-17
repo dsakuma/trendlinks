@@ -18,7 +18,7 @@ def threadCreator(pool, last_index)
   if(shortList[-1].id != nil)
     tmp = shortList[-1].id;
   else
-    sleep(1)
+    sleep(3)
   end
 
   pool.process{processShortList(shortList)};
