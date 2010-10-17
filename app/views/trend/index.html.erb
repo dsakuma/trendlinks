@@ -1,0 +1,428 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Reenie+Beanie">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light">
+	<style type="text/css"> 
+		
+		body{
+background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
+	background: -webkit-gradient(linear, left bottom, right bottom, color-stop(0, #fbac3c),color-stop(0.87, #ffcc85));
+
+		}
+		#logo{
+			height: 200px;
+			width: 100%;
+			background-image: url('images/logo.png');
+			background-repeat: no-repeat;
+			display: block;
+		}
+		#header{
+			height: 200px;
+			width: 100%;
+			background: #4d4d4b;
+			margin-left:auto;
+			margin-right:auto;
+			border-radius: 25px;
+			-moz-border-radius: 25px;
+			-moz-box-shadow: 6px 6px 14px #000;
+		    -webkit-box-shadow: 6px 6px 14px #000;
+		}
+		#footer{
+			background: #4d4d4b;
+			height: 200px;
+			width: 100%;	
+			-moz-box-shadow: 6px 6px 14px #000;
+		    -webkit-box-shadow: 6px 6px 14px #000;	
+		}
+		
+		#links span{
+			padding: 10px;
+		
+		}
+		#links{
+			margin-left:auto;
+			margin-right:auto;
+			position:relative;
+			top:20px;
+			width:500px;
+		}
+		#rr_link
+		{
+		position:relative;
+		top: 10px;
+		}
+		#page_body{
+				margin-left:auto;
+			margin-right:auto;
+			width:870px;
+			border-radius: 15px;
+			-moz-border-radius: 15px;
+		}
+		#ver-zebra{
+			border-collapse:collapse;
+			font-family:'Josefin Sans Std Light', "Lucida Sans Unicode","Lucida Grande","Sans-Serif";
+			font-size:22px;
+			margin:0 20px 20px;
+			text-align:left;
+			width:800px;			
+			padding: 5px 5px 5px 15px;
+			-moz-box-shadow: 6px 6px 14px #000;
+		    -webkit-box-shadow: 6px 6px 14px #000;
+    		box-shadow: 6px 6px 14px #000;
+		}
+		.vzebra-odd{background:none repeat scroll 0 0 #EFF2FF;}
+		.vzebra-even{background:none repeat scroll 0 0 #E8EDFF;}
+		
+		#ver-zebra #vzebra-url, #ver-zebra #vzebra-url2
+		{
+			background: #d0dafd;
+			border-bottom: 1px solid #c8d4fd;
+		}
+		#ver-zebra #vzebra-position, #ver-zebra #vzebra-url1
+		{
+			background: #dce4ff;
+			border-bottom: 1px solid #d6dfff;
+		}
+		#ver-zebra th {
+			border-left:1px solid #FFFFFF;
+			border-right:1px solid #FFFFFF;
+			color:#003399;
+			font-size:28px;
+			font-weight:normal;
+			padding:12px 15px;
+			font-family:'Reenie Beanie';
+		}
+		#ver-zebra td {
+			border-left:1px solid #FFFFFF;
+			border-right:1px solid #FFFFFF;			
+			padding:3px 15px;
+		}
+		
+		#ver-zebra tr {
+			cursor: pointer
+		}
+		
+		
+		
+		.td_url{
+
+		}
+		.td_position{
+			width:10px;
+		}
+		#last_hours_div{
+		
+		}
+		#tl_explanation{
+			color:white;
+			float:left;
+			font-size:28px;
+			left:200px;
+			position:absolute;
+			top:90px;	
+			font-family:'Lobster', "Lucida Sans Unicode","Lucida Grande","Sans-Serif";	
+		}
+		#whw{
+		color: red;
+		}
+		#samwell{
+		display:block;
+		height:100px;
+		position:absolute;
+		right:5px;
+		top:5px;
+		width:100px;
+		}
+		#ver-zebra tr:hover td{
+			background: #3399FF;
+			color:white;
+			font-weight: bold;
+		}
+		#ver-zebra td{
+			color:#666699;
+		}
+		.b_last_hours {
+		   border-top: 1px solid #96d1f8;
+		   background: #65a9d7;
+		   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+		   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+		   padding: 5px 10px;
+		   -webkit-border-radius: 8px;
+		   -moz-border-radius: 8px;
+		   border-radius: 8px;
+		   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+		   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+		   box-shadow: rgba(0,0,0,1) 0 1px 0;
+		   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+		   color: white;
+		   font-size: 24px;
+		   font-family: Georgia, serif;
+		   text-decoration: none;
+		   vertical-align: middle;
+		   font-family:'Lobster', "Lucida Sans Unicode","Lucida Grande","Sans-Serif";	
+   }
+	.b_last_hours:hover {
+	   border-top-color: #28597a;
+	   background: #28597a;
+	   color: #ccc;
+	   }
+	.b_last_hours:active {
+	   border-top-color: #1b435e;
+	   background: #1b435e;
+	   }
+	  .b_last_six_hours{
+	  
+	  } 
+	  
+	  .b_last_six_hours {
+		   border-top: 1px solid #99cc99;
+		   background: #006600;
+		   background: -webkit-gradient(linear, left top, left bottom, from(#006600), to(#99cc99));
+		   background: -moz-linear-gradient(top, #006600, #99cc99);
+		   padding: 5px 10px;
+		   -webkit-border-radius: 8px;
+		   -moz-border-radius: 8px;
+		   border-radius: 8px;
+		   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+		   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+		   box-shadow: rgba(0,0,0,1) 0 1px 0;
+		   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+		   color: white;
+		   font-size: 24px;
+		   font-family: Georgia, serif;
+		   text-decoration: none;
+		   vertical-align: middle;
+		   font-family:'Lobster', "Lucida Sans Unicode","Lucida Grande","Sans-Serif";	
+   }
+	.b_last_six_hours:hover {
+	   border-top-color: #006600;
+	   background: #006600;
+	   color: #ccc;
+	   }
+	.b_last_six_hours:active {
+	   border-top-color: #1b435e;
+	   background: #1b435e;
+	   }
+	  .b_last_six_hours{
+	  
+	  } 
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  #ver-zebra-six{
+			border-collapse:collapse;
+			font-family:'Josefin Sans Std Light', "Lucida Sans Unicode","Lucida Grande","Sans-Serif";
+			font-size:22px;
+			margin:0 20px 20px;
+			text-align:left;
+			width:800px;			
+			padding: 5px 5px 5px 15px;
+			-moz-box-shadow: 6px 6px 14px #000;
+		    -webkit-box-shadow: 6px 6px 14px #000;
+    		box-shadow: 6px 6px 14px #000;
+		}
+		.vzebra-odd-six{background:none repeat scroll 0 0 #a6cbb1;}
+		.vzebra-even-six{background:none repeat scroll 0 0 #8cac95;}
+		
+		#ver-zebra-six #vzebra-url-six, #ver-zebra-six #vzebra-url2-six
+		{
+			background: #497254;
+			border-bottom: 1px solid #c8d4fd;
+		}
+		#ver-zebra-six #vzebra-position-six, #ver-zebra-six #vzebra-url1-six
+		{
+			background: #598e68;
+			border-bottom: 1px solid #d6dfff;
+		}
+		#ver-zebra-six th {
+			border-left:1px solid #FFFFFF;
+			border-right:1px solid #FFFFFF;
+			color:#014615;
+			font-size:28px;
+			font-weight:normal;
+			padding:12px 15px;
+			font-family:'Reenie Beanie';
+		}
+		#ver-zebra-six td {
+			border-left:1px solid #FFFFFF;
+			border-right:1px solid #FFFFFF;			
+			padding:3px 15px;
+		}
+	  
+	  	#ver-zebra-six tr:hover td{
+			background: #448857;
+			color:white;
+			font-weight: bold;
+		}
+		#ver-zebra-six td{
+			color:#495c4e;
+		}
+		
+		#ver-zebra-six tr {
+			cursor: pointer;
+		}
+
+		#rr_link, #r_link, #tc_link{
+		cursor: pointer;
+		}
+	  
+	  #trend_links_msg{
+	  display:block;
+	position:relative;
+	text-align:center;
+	top:100px;
+	width:100%;
+	font-family:'Josefin Sans Std Light',"Lucida Sans Unicode","Lucida Grande","Sans-Serif";
+	  }
+	  
+	</style>
+</head>
+<body>
+
+<div id='header'>
+	<span id='logo'></span>
+	<div id='tl_explanation'>See <label id='whw'>what's happening in the world</label> by the most posted links in Twitter  <br/>-- Right now!!</div>
+	<span id='samwell'></span>
+</div>
+<div id='page_body'>
+<span id='last_ours_tab'>
+<a class="button b_last_hours" href="#" style="top: 236px; left: 199.5px;">Top Last Hour</a>
+</span>
+
+         
+<div id='last_hours_div'>
+
+<table id="ver-zebra">
+	<colgroup>
+		<col class="vzebra-odd">
+		<col class="vzebra-even">
+	</colgroup>  
+   
+     <!-- Table header -->  
+   
+         <thead>  
+             <tr>  
+                 <th scope="col" id="vzebra-position">Position</th>  
+				<th scope="col" id="vzebra-url">URL</th>
+             </tr>  
+         </thead>           
+   
+     <!-- Table body -->     
+         <tbody>  
+         	<% position = 1 %>
+			<% @last_hour_tops.each do |elem| %>
+			<tr onclick='window.open("<%= elem %>")' target='_blank'>				
+				<td class='td_position'><%= position %></td>  
+				<td class='td_url'><%= elem %></td>  
+			</tr>  		
+			<% position = position + 1 %>
+			<% end %>
+         </tbody>     
+ </table>  
+</div>
+
+
+<span id='last_six_ours_tab'>
+<a class="button b_last_six_hours" href="#" style="top: 236px; left: 199.5px;">Top Last 6 Hours</a>
+</span>
+
+<div id='last_six_hours_div'>
+
+<table id="ver-zebra-six">
+	<colgroup>
+		<col class="vzebra-odd-six">
+		<col class="vzebra-even-six">
+	</colgroup>  
+   
+     <!-- Table header -->  
+   
+         <thead>  
+             <tr>  
+                 <th scope="col" id="vzebra-position-six">Position</th>  
+				<th scope="col" id="vzebra-url-six">URL</th>
+             </tr>  
+         </thead>  
+   
+  
+         
+   
+     <!-- Table body -->  
+   
+         <tbody>  
+             <tr>  
+                 <td class='td_position'>1</td>  
+                 <td class='td_url'>www.samwell.com</td>
+             </tr>  
+             <tr>  
+                 <td class='td_position'>2</td>  
+                 <td class='td_url'>http://www.youtube.com/sakuma-cocando-bunda/</td>
+             </tr>  
+             <tr>  
+                 <td class='td_position'>3</td>  
+                 <td class='td_url'>www.orkut.com/samwell-what-what</td>
+             </tr>  
+             <tr>  
+                 <td class='td_position'>4</td>  
+                 <td class='td_url'>www.google.com.br</td>
+             </tr>  
+             <tr>  
+                 <td class='td_position'>5</td>  
+                 <td class='td_url'>www.sakuma.baitola.com</td>
+             </tr>  
+             <tr>  
+                 <td class='td_position'>6</td>  
+                 <td class='td_url'>www.voicetechnology.com</td>
+             </tr>  
+             <tr>  
+                 <td class='td_position'>7</td>  
+                 <td class='td_url'>www.youtube.com/samwell</td>
+             </tr>  
+             <tr>  
+                 <td class='td_position'>8</td>  
+                 <td class='td_url'>www.viladiva.com</td>
+             </tr>  
+             <tr>  
+                 <td class='td_position'>9</td>  
+                 <td class='td_url'>www.azulejo.com</td>
+             </tr>  
+             <tr>  
+                 <td class='td_position'>10</td>  
+                 <td class='td_url'>www.google.com</td>
+             </tr>  
+             
+
+         </tbody>  
+   
+ </table>  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+<div id='footer'>
+<div id='links'>
+	<span id='rr_link' onclick='window.open("http://railsrumble.com/")'><img src='images/railsrumble.png'></span>
+	<span id='r_link'  onclick='window.open("http://twitter.com")'><img src='images/twitter.png'></span>
+	<span id='tc_link'><img src='images/twitcam.gif'></span>
+</div>
+	<span id='trend_links_msg'>TrendLinks 2010 - Created On Rails Rumble<br>Powered by Azulejo</span>
+</div>
+</body>
+</html>
