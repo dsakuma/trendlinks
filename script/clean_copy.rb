@@ -71,17 +71,23 @@ end
 
 begin
   @log.info("[#{Time.now}] |||||||||||||||||||||||||||||||||||||")
-
-  old_currents = Current.find :all, :select => "id"
-  old_shortes = Shorter.find :all, :select => "id"
+@log.info("[#{Time.now}] Deletando current/shorter Antigas")
+  Current.delete_all
+ Shorter.delete_all
 
   @log.info("[#{Time.now}] Copiando para current shorter and last hours")
   copy_to_current_shorter_last_hours
+  
+  tops = Current.find_top_10
 
-  @log.info("[#{Time.now}] Deletando current/shorter Antigas")
-sleep 90
-  Current.delete old_currents
-  Shorter.delete old_shortes
+  Top.delete_all
+
+  tops.each do |top|	
+   	t = Top.new
+  	t.url = top.url
+	t.count = top.count
+	t.save	
+  end	
 
   @log.info("[#{Time.now}] Deletando short/resolved")
   Short.delete_all

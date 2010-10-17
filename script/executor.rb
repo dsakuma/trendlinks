@@ -1,11 +1,14 @@
-require 'script/resolverProcessor.rb'
-require 'app/jobs/thread_pool'
+require File.dirname(__FILE__)+ '/../script/resolverProcessor.rb'
+require File.dirname(__FILE__)+ '/../app/jobs/thread_pool'
 
 ENV["RAILS_ENV"] ||= "development"
 ENV["PATH"] = "/usr/local/bin/:/opt/local/bin:#{ENV["PATH"]}"
 require File.dirname(__FILE__)+'/../config/environment'
 Rails.configuration.log_level = :info # Disable debug
 ActiveRecord::Base.allow_concurrency = true
+
+
+@log = Logger.new('/var/www/rr10-team-233/log/executor.log',1,10485760)
 
 THREAD_POOL_SIZE = 20
 SHORTS_LIMIT_DEFAULT = 20
@@ -33,9 +36,11 @@ def threadCreator(pool, last_index)
 end
 
 begin
+  @log.info("[#{Time.now}] Iniciando executor")
   pool = ThreadPool.new(THREAD_POOL_SIZE)
   last_index = 0;
   while(true)
+    @log.info("[#{Time.now}] Criando thread")
     last_index = threadCreator(pool, last_index);
   end
 end
