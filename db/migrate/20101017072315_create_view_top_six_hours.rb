@@ -4,7 +4,7 @@ class CreateViewTopSixHours < ActiveRecord::Migration
     execute "create view last_six_top as
                   SELECT l.id as id, l.resolved_url as url, sum(l.count) as count
                   FROM last_hours l
-                  GROUP BY l.resolved_url LIMIT 200"
+                  GROUP BY l.resolved_url"
   end
 
   def self.down

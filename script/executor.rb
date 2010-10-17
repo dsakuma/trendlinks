@@ -25,6 +25,7 @@ def threadCreator(pool, last_index)
   
   rescue Exception => e
     puts "Couldn't porcess ShortList...#{e.message}"
+    sleep(3)  
     return last_index
   end
   return tmp;

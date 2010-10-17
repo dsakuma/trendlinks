@@ -34,9 +34,9 @@ def getResolvedURL(s_url)
       resolved.resolved_url = r_url;
       resolved.save
     end
-    resolved
+    return resolved
   end
-  nil
+  return nil
 end
 
 #dada uma url encurtada, retorna a url original
