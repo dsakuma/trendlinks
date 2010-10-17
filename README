@@ -1,0 +1,29 @@
+
+The purpose of TrendLinks is to show the most popular links in Twitter to
+keep everybody informed about what is happening in the world
+
+To be precise, urls provided from different shorteners will be solved and counted as the same.
+
+Next features:
+- Show popular links organized by countries
+- Have a list of categories, as videos, pics and others
+
+
+The app has the following jobs:
+>>> search.rb 
+"Search links in Twitter API, separate the links and populate the database with the shortened links"
+
+>>> resolverProcessor.rb
+"Solve the shortened urls"
+
+>>> executor.rb
+"Solve the shortened urls and populate the database creating threads of resolverProcessor"
+
+>>> clean_history.rb
+"Delete urls older than 6hs from database"
+
+>>> clean_copy.rb
+"Delete all from current/shorteners and copy new resolveds to current/shorteners"
+
+All jobs are initialized automatically when the server boots except the executor. Run to start:
+  ruby /var/www/rr10-team-233/script/executor.rb &
