@@ -57,11 +57,17 @@ end
 
 
 begin
-  puts"Deletando current/shorter"
-  Current.delete_all
-  Shorter.delete_all
+
+  old_currents = Current.find :all, :select => "id"
+  old_shortes = Shorter.find :first, :select => "id"
+
   puts"Copy to current shorter and last hours"
   copy_to_current_shorter_last_hours
+
+  puts"Deletando current/shorter Antigas"
+  Current.delete old_currents
+  Shorter.delete old_shortes
+
   puts"Deletando Short/Resolved"
   Short.delete_all
   Resolved.delete_all
