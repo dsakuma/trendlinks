@@ -319,7 +319,12 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
 			<% @last_hour_tops.each do |elem| %>
 			<tr onclick='window.open("<%= elem.url %>")' target='_blank'>
 				<td class='td_position'><%= position %></td>
-				<td class='td_url'><%= elem.url %></td>
+							<% if elem.url.length > 60 %>
+			  <% url =  elem.url[0..60] + "..." %>
+			  <% else %>
+			  <% url =  elem.url[0..60] + "..." %>
+			<% end %>
+				<td class='td_url'><span title='<%= elem.url %>'><%= url %></span></td>
 				<td class='td_count'><%= elem.count %></td>
 			</tr>
 			<% position = position + 1 %>
@@ -362,7 +367,12 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
 			<% @last_6_hour_tops.each do |elem| %>
 			<tr onclick='window.open("<%= elem.url %>")' target='_blank'>
 			<td class='td_position'><%= position %></td>
-				<td class='td_url'><%= elem.url %></td>
+			<% if elem.url.length > 60 %>
+			  <% url =  elem.url[0..60] + "..." %>
+			  <% else %>
+			  <% url =  elem.url[0..60] + "..." %>
+			<% end %>
+				<td class='td_url'><span title='<%= elem.url %>'><%= url %></span></td>
 				<td class='td_count'><%= elem.count %></td>
 			</tr>
 			<% position = position + 1 %>
