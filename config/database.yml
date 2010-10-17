@@ -7,7 +7,7 @@ development:
   adapter: mysql
   database: trendlinks
   username: root
-  password: vt1251voice
+  password: 
   pool: 5
   timeout: 5000
 
