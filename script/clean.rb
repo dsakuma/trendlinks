@@ -11,14 +11,15 @@ ActiveRecord::Base.allow_concurrency = true
 
 ##################
 
-def copy_to_current
+def copy_to_current_shorter_last_hours
   resolveds = Resolved.find(:all)
   for i in resolveds
     current = Current.new
     current.resolved_url = i.resolved_url
     current.save
-    shorts = Short.find(:all, :conditions => 'resolved_id = #{i.id}')
+    shorts = Short.find(:all, :conditions => "resolved_id = #{i.id}")
     copy_to_shorter(shorts.length, current)
+    copy_to_lasthours current
   end
 end
 
@@ -36,13 +37,28 @@ def copy_to_shorter(length, current)
   s.save
 end
 
-def delete_resolved_and_short
-  Short.delete_all
-  Resolved.delete_all
+def copy_to_lasthours current
+   last_hours = LastHour.find_by_resolved_url(current.resolved_url)
+   if last_hours.nil?
+      last_hours = LastHour.new
+      last_hours.resolved_url = current.resolved_url
+      last_hours.count = 1
+   else
+      last_hours.count = last_hours.count + 1
+   end
+   last_hours.save
 end
 
+
+
 begin
-   copy_to_current
-   delete_resolved_and_short
+  puts"Deletando current/shorter"
+  Current.delete_all
+  Shorter.delete_all
+  puts"Copy to current shorter and last hours"
+  copy_to_current_shorter_last_hours
+  puts"Deletando Short/Resolved"
+  Short.delete_all
+  Resolved.delete_all
 end
 
