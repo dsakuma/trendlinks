@@ -79,7 +79,7 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
 			background: #d0dafd;
 			border-bottom: 1px solid #c8d4fd;
 		}
-		#ver-zebra #vzebra-position, #ver-zebra #vzebra-url1
+		#ver-zebra #vzebra-position, #ver-zebra #vzebra-count
 		{
 			background: #dce4ff;
 			border-bottom: 1px solid #d6dfff;
@@ -234,7 +234,7 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
 			background: #497254;
 			border-bottom: 1px solid #c8d4fd;
 		}
-		#ver-zebra-six #vzebra-position-six, #ver-zebra-six #vzebra-url1-six
+		#ver-zebra-six #vzebra-position-six, #ver-zebra-six #vzebra-count-six
 		{
 			background: #598e68;
 			border-bottom: 1px solid #d6dfff;
@@ -300,6 +300,7 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
 	<colgroup>
 		<col class="vzebra-odd">
 		<col class="vzebra-even">
+		<col class="vzebra-odd">
 	</colgroup>
 
      <!-- Table header -->
@@ -308,6 +309,7 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
              <tr>
                  <th scope="col" id="vzebra-position">Position</th>
 				<th scope="col" id="vzebra-url">URL</th>
+				<th scope="col" id="vzebra-count">Count</th>
              </tr>
          </thead>
 
@@ -318,6 +320,7 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
 			<tr onclick='window.open("<%= elem.url %>")' target='_blank'>
 				<td class='td_position'><%= position %></td>
 				<td class='td_url'><%= elem.url %></td>
+				<td class='td_count'><%= elem.count %></td>
 			</tr>
 			<% position = position + 1 %>
 			<% end %>
@@ -336,6 +339,7 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
 	<colgroup>
 		<col class="vzebra-odd-six">
 		<col class="vzebra-even-six">
+		<col class="vzebra-odd-six">
 	</colgroup>
 
      <!-- Table header -->
@@ -344,6 +348,7 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
              <tr>
                  <th scope="col" id="vzebra-position-six">Position</th>
 				<th scope="col" id="vzebra-url-six">URL</th>
+				<th scope="col" id="vzebra-count-six">Count</th>
              </tr>
          </thead>
 
@@ -353,62 +358,18 @@ background: -moz-linear-gradient(center left, #fbac3c 0%,#ffcc85 87%);
      <!-- Table body -->
 
          <tbody>
-             <tr>
-                 <td class='td_position'>1</td>
-                 <td class='td_url'>www.samwell.com</td>
-             </tr>
-             <tr>
-                 <td class='td_position'>2</td>
-                 <td class='td_url'>http://www.youtube.com/sakuma-cocando-bunda/</td>
-             </tr>
-             <tr>
-                 <td class='td_position'>3</td>
-                 <td class='td_url'>www.orkut.com/samwell-what-what</td>
-             </tr>
-             <tr>
-                 <td class='td_position'>4</td>
-                 <td class='td_url'>www.google.com.br</td>
-             </tr>
-             <tr>
-                 <td class='td_position'>5</td>
-                 <td class='td_url'>www.sakuma.baitola.com</td>
-             </tr>
-             <tr>
-                 <td class='td_position'>6</td>
-                 <td class='td_url'>www.voicetechnology.com</td>
-             </tr>
-             <tr>
-                 <td class='td_position'>7</td>
-                 <td class='td_url'>www.youtube.com/samwell</td>
-             </tr>
-             <tr>
-                 <td class='td_position'>8</td>
-                 <td class='td_url'>www.viladiva.com</td>
-             </tr>
-             <tr>
-                 <td class='td_position'>9</td>
-                 <td class='td_url'>www.azulejo.com</td>
-             </tr>
-             <tr>
-                 <td class='td_position'>10</td>
-                 <td class='td_url'>www.google.com</td>
-             </tr>
-
-
+	        <% position = 1 %>
+			<% @last_6_hour_tops.each do |elem| %>
+			<tr onclick='window.open("<%= elem.url %>")' target='_blank'>
+			<td class='td_position'><%= position %></td>
+				<td class='td_url'><%= elem.url %></td>
+				<td class='td_count'><%= elem.count %></td>
+			</tr>
+			<% position = position + 1 %>
+			<% end %>
          </tbody>
-
  </table>
 </div>
-
-
-
-
-
-
-
-
-
-
 
 </div>
 
